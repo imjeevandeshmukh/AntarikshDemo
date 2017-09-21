@@ -1,5 +1,6 @@
 package com.bytelogs.antarikshdemo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,8 @@ public class MockSighUpActivity extends AppCompatActivity {
         Button bt = (Button)findViewById(R.id.sighUp);
     }
     public void gotoWelcome(View view){
-        Toast.makeText(MockSighUpActivity.this,"This is a Demo app",Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(MockSighUpActivity.this,NewsActivity.class);
+        startActivity(intent);
     }
 
 }
